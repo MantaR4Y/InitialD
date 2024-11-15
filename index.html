@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="images/db.ico" rel="icon" type="image/x-icon" />
+    <title>Initial D!!</title>
+    <link rel="stylesheet" href="coolstyle.css" />
+  </head>
+
+  <body>
+    <div class="header orange">
+      <div class="logo dg center-content">
+        <img
+          class="logoclickable"
+          src="images/logo.png"
+          onClick="playDejaVuSong()"
+        />
+        <audio src="images/DejaVu.mp3" id="DejaVu"></audio>
+      </div>
+
+      <div class="lamps green">
+        <div class="clickable lamp1 black center-content">
+          <img
+            id="trafficLight1"
+            class="logoclickable"
+            src="images/redlight.png"
+            onclick="startRace()"
+          />
+        </div>
+
+        <div class="lamp2 black center-content">
+          <img
+            id="trafficLight2"
+            class="logoclickable"
+            src="images/redlight.png"
+            onclick="startRace()"
+          />
+        </div>
+      </div>
+
+      <div class="logo dg center-content">
+        <img
+          class="logoclickable"
+          src="images/logo.png"
+          onClick="playGasSong()"
+        />
+        <audio src="images/Gas.mp3" id="gas"></audio>
+      </div>
+    </div>
+
+    <div class="streets blue">
+      <div class="street bgs dg">
+        <div class="car1 center-content">
+          <img
+            class="remove2"
+            id="ae86"
+            src="images/newimages/ae86Sideview.png"
+            onClick="vroom()"
+            />
+            <audio src="images/vroom.mp3" id="vroom"></audio>
+          />
+          <img class="remove"id="ae862" src="images/newimages/ae86Frontview.png"
+            onClick="carVroom()"
+          />
+          <audio src="images/vroom.mp3" id="carVroom"></audio>
+        </div>
+    </div>
+
+    <div class="street bgs lg">
+      <div class="car2 center-content">
+        <img class="remove2" id="rx7" src="images/newimages/rx7Sideview.png" />
+        <img class="remove" id="rx72" src="images/newimages/rx7Frontview.png" />
+      </div>
+    </div>
+
+    <script src="script1.js"></script>
+  </body>
+</html>
